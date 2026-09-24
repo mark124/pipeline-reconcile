@@ -1,0 +1,15 @@
+{
+  "name": "rowset",
+  "description": "Tools from Rowset LLC for proving that data pipelines delivered what they claimed.",
+  "owner": {
+    "name": "Mark C. Johnson",
+    "email": "mark@rowset.co"
+  },
+  "plugins": [
+    {
+      "name": "pipeline-reconcile",
+      "source": "./",
+      "description": "Prove what landed. Checks that the records a data pipeline reported as delivered actually arrived, and catches the three ways a green run hides missing data."
+    }
+  ]
+}

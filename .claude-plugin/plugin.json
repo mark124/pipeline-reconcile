@@ -1,0 +1,11 @@
+{
+  "name": "pipeline-reconcile",
+  "displayName": "Pipeline Reconcile",
+  "version": "1.4.2",
+  "description": "Prove what landed. Checks that the records a data pipeline reported as delivered actually arrived, and catches the three ways a green run hides missing data.",
+  "author": {
+    "name": "Mark C. Johnson",
+    "email": "mark@rowset.co"
+  },
+  "skills": "./skills/"
+}
