@@ -128,6 +128,26 @@ other test here asserts a case somebody thought of, and the bugs above were all 
 
 A check that cannot fail is not a check — including this one.
 
+## Privacy
+
+**This plugin collects nothing and transmits nothing.** There is no telemetry, no update check, no
+analytics, and no outbound request of any kind — the scripts import only the Python standard library
+and open no network connections. Nothing is sent to Rowset LLC, to Anthropic, or to anyone else.
+
+Everything happens on the machine it runs on:
+
+- It **reads** the files you name on the command line, and nothing else
+- It **writes** only to `--json-out`, and refuses if that path is one of the inputs
+- It takes **no credentials** — it works on exports, not connection strings, so it has no route to a
+  production system
+
+One thing to handle with care: your data stays yours, but it is still your data. `--json-out` writes
+**natural key values** for every finding — student IDs, order numbers, account numbers, whatever your
+key is — and `--show` prints them to the terminal. Treat that output like the exports it came from,
+and use `--show 0` when you are screen-sharing.
+
+See [SECURITY.md](SECURITY.md) for how to report a vulnerability.
+
 ## Licence
 
 MIT — see [LICENSE](LICENSE).
