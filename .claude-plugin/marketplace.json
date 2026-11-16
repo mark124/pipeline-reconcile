@@ -14,8 +14,9 @@
     {
       "name": "dreaming",
       "source": {
-        "source": "github",
-        "repo": "mark124/dreaming"
+        "source": "git-subdir",
+        "url": "mark124/dreaming",
+        "path": "plugin"
       },
       "description": "Keeps Claude's memory notes true to what happened: reads your past Claude Code sessions and proposes evidence-backed corrections for you to approve."
     }
