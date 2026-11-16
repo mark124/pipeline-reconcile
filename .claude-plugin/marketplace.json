@@ -1,6 +1,6 @@
 {
   "name": "rowset",
-  "description": "Tools from Rowset LLC for proving that data pipelines delivered what they claimed.",
+  "description": "Claude Code plugins from Rowset LLC.",
   "owner": {
     "name": "Mark C. Johnson",
     "email": "mark@rowset.co"
@@ -10,6 +10,14 @@
       "name": "pipeline-reconcile",
       "source": "./",
       "description": "Prove what landed. Checks that the records a data pipeline reported as delivered actually arrived, and catches the three ways a green run hides missing data."
+    },
+    {
+      "name": "dreaming",
+      "source": {
+        "source": "github",
+        "repo": "mark124/dreaming"
+      },
+      "description": "Keeps Claude's memory notes true to what happened: reads your past Claude Code sessions and proposes evidence-backed corrections for you to approve."
     }
   ]
 }
